@@ -1,0 +1,511 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES  AMATIC SC
+  /*******************************************/
+  
+  body {
+    font-family: 'Zen loop', Georgia, Times, 'Times New Roman', serif
+  }
+  
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  * {
+    clear: both;
+  }
+  /*Add media queriers adjust width and margin so its aligned in all views*/
+  
+  
+  header {
+    background: #d10a6e;
+    font-size: 14px;
+    color: lightpink;
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  header a {
+    color: lightpink;
+    text-decoration: none;
+    float: right;
+    clear: right;
+    padding-right: 30px;
+  }
+  
+  header nav {
+    float: left;
+    padding-left: 30px;
+  }
+  nav > a {
+    float: left;
+  }
+  
+  header img {
+    text-align: center;
+    width: 55px;
+    height: auto;
+    margin-right: 100px;
+  }
+  
+  section {
+    background: linear-gradient(#d10a6e,#f485a8);
+    color: lightpink;
+    height: 275px;
+    width: 100%;
+  }
+  
+  section a {
+    text-align: center;
+    width: 100%;
+    float: left;
+    clear: right;
+  }
+  
+  div {
+    color: deeppink;
+    height: 300px;
+    width: 100%;
+  }
+  
+  article {
+    background: linear-gradient(to left,#ffffff,#f485a8);
+    color: deeppink;
+    height: 450px;
+    width: 100%;
+  }
+  
+  aside {
+    height: 100%;
+    width: 50%;
+    float: left;
+    clear: right;
+  }
+  
+    .images {
+      height: 65px;
+      width: auto;
+      min-width: 255px;
+      min-height: 135px;
+      display: inline-block;
+    }
+  
+  .Become{
+    padding: 30px 100px;
+  }
+  
+  .Become > aside {
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .Become p{
+    margin-bottom: 45px;
+  }
+  
+  .WhyVisit {
+    padding: 35px 300px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .WhyVisit p {
+  margin-bottom: 45px;
+  }
+  
+  p{
+  width: 100%;
+  clear: both;
+  text-align: center;
+  float: left;
+  }
+  
+  h1,h2 { 
+  width: 100%;
+  clear: both;
+  text-align: center;
+  float: left;
+  }
+  
+  h3,h6 {
+  width: 100%;
+  clear: both;
+  text-align: center;
+  float: left;
+  }
+  
+  h1 {
+    font-size: 44px;
+  }
+  
+  h2{
+    font-size: 34px;
+  }
+  
+  h3{
+    font-size: 26px;
+  }
+  
+  h4 {
+    font-size: 18px;
+  }
+  
+  h5 {
+    font-size: 16px;
+  }
+  
+  h6 {
+    font-size: 16px;
+  }
+  
+  a {
+    font-size: 18px;
+  }
+  
+  p {
+    font-size: 22px;
+  }
+  
+  span {
+    font-size: 18px;
+  }
+  
+  .button {
+    border: solid 1px deeppink;
+    background: transparent;
+    padding: 15px 50px;
+    color: black;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  footer {
+    background: linear-gradient(#f485a8,#d10a6e);
+    color: lightpink;
+    padding: 60px 40px;
+    height: 353px;
+  }
+  
+  .Contact {
+    float: left;
+  
+  }
+  .TopFooterBorder {
+    border-bottom: 1px solid lightpink;
+  }
+  .Contact, .Location {
+    text-align: left;
+  }
+  
+  .Contact h5 {
+    color: lightpink;
+    margin-bottom: 3px;
+  }
+  
+  .Contact li {
+    display: inline;
+    padding-right: 15px;
+  }
+  
+  .Contact a {
+    color: lightpink;
+  }
+  
+  .Location h5{
+  float: left;
+  clear: both;
+  width: 100%;
+  text-align: right;
+  border-top: 1px solid lightpink;
+  } 
+  
+  .Location {
+    float: right;
+    text-align: right;
+  }
+  
+  .Location span {
+    display: block;
+    text-align: right;
+    margin-bottom: 3px;
+  }
+  
+  footer aside {
+    width: 50%;
+  }
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
+  @media screen and (min-width: 1196px) and (max-width: 1612px) {
+  
+    .images {
+      height: 50px;
+      width: auto;
+      min-width: 215px;
+      min-height: 105px;
+      }
+  
+  }
+  
+  @media screen and (min-width: 862px) and (max-width: 1195px) {
+  
+    section {
+      padding: 0px 20px;
+    }
+  
+    .WhyVisit {
+    padding: 5px 200px;
+      }
+  
+    .Become {
+      padding: 15px 50px;
+    }
+  
+    .images {
+      height: 50px;
+      width: auto;
+      min-width: 215px;
+      min-height: 105px;
+      }
+  }
+  
+  @media screen and (min-width: 500px) and (max-width: 861px) {
+    
+    section {
+      padding: 0px 15px;
+    }
+  
+    .WhyVisit {
+      padding: 10px 100px;
+        }
+    
+      .Become {
+        padding: 0%;
+      }
+  
+      .Become p{
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+  
+      .Become h3 {
+        margin-bottom: 5px;
+        font-size: 22px;
+      }
+      
+      p {
+        font-size: 20px;
+      }
+  
+      h2 {
+        font-size: 30px;
+      }
+  
+      h1 {
+        font-size: 36px;
+      }
+  
+      article > aside {
+        height: 50%;
+        width: 100%;
+        float: right;
+        clear: left;
+      } 
+  
+      .images {
+        visibility: hidden;
+        position: absolute;
+        min-width: 0px;
+        min-height: 0px;      
+        }
+  
+        .button {
+          border: solid 1px rgb(188, 61, 82);
+          background: transparent;
+          padding: 15px 50px;
+          width: 15%;
+        }
+  
+        footer {
+          background: linear-gradient(#f485a8,#d10a6e);
+          color:lightpink;
+          padding: 50px 20px;
+          height: 353px;
+        }
+  }
+  
+  @media screen and (min-width: 350px) and (max-width: 499px) {
+    
+  body {
+    font-size: 14px;
+  }
+  
+    section {
+      padding: 0px 15px;
+    }
+  
+    a {
+      font-size: 14px;
+    }
+  
+    header > img + a {
+      float: left;
+      width: 50%;
+      text-align: left;
+      padding-left: 30px;
+    }
+  
+    header nav {
+      float: left;
+      clear: right;
+      width: 50%;
+      text-align: left;
+    }
+  
+    nav > a {
+      float: left;
+      clear: both;
+      margin-bottom: 6px;
+    }
+      
+      header img {
+        text-align: right;
+        width: 45px;
+        height: auto;
+        float: right;
+        clear: right;
+        margin: 0px 30px 0px 0px;  
+  }
+  
+    .WhyVisit { 
+      padding: 10px 50px;
+        }
+    
+      .Become {
+        padding: 0%;
+      }
+  
+      .Become p{
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+  
+      .Become h3 {
+        margin-bottom: 5px;
+        font-size: 20px;
+      }
+      
+      p {
+        font-size: 16px;
+      }
+  
+      h2 {
+        font-size: 26px;
+      }
+  
+      h1 {
+        font-size: 32px;
+      }
+  
+      article > aside {
+        height: 50%;
+        width: 100%;
+        float: right;
+        clear: left;
+      } 
+  
+      .images {
+        visibility: hidden;
+        position: absolute;
+        min-width: 0px;
+        min-height: 0px;      
+        }
+  
+        .button {
+          border: solid 1px rgb(188, 61, 82);
+          background: transparent;
+          padding: 15px 50px;
+          width: 15%;
+        }
+  
+        footer {
+          background: linear-gradient(#f485a8,#d10a6e);
+          color: white;
+          padding: 30px 0px;
+          height: 353px;
+        }
+  
+        .TopFooterBorder {
+          border-top: 1px solid white;
+          padding-top: 3px;
+          border-bottom: 0px;
+          width: 50%;
+          text-align: left;
+        }
+  
+        footer > aside {
+          height: 40%;
+          width: 50%;
+          float: right;
+          clear: left;
+        } 
+  
+        .Location {
+          float: left;
+          clear: right;
+          text-align: right;
+        }
+  
+        .Location span {
+          display: block;
+          text-align:  right;
+          margin: 10px 0px;
+        }
+        
+    .Contact li {
+      display: block;
+      float: left;
+      padding-right: 15px;
+    }
+  
+    .Contact h5 {
+      float: left;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 0px;
+    }
+  
+    .Location h5{
+      text-align: right;
+      padding-top: 3px;
+      border-top: 0px;
+      border-bottom: 1px solid white;
+      padding-bottom: 5px;    
+  }   
+  }
+  
+  
